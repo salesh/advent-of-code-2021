@@ -20,19 +20,15 @@ def proceses(dictResult):
     day = 1
     while NUM_DAYS >= day:
         dictCopy = dictResult.copy()
-        for k, v in reversed(dictResult.items()):
+        for k, v in dictResult.items():
             if not v == 0:
                 if k == 0:
                     dictCopy[k] -= v
-                    # 8 day
+                    # 8 day add new fishes
                     dictCopy[DAYS_NEW_FISH + 1] += v
-                    # 6 day
+                    # 6 day place mothers
                     dictCopy[DAYS_NEW_FISH - 1] += v
                     numOfFish += v
-                # 8 day
-                elif k == DAYS_NEW_FISH + 1:
-                    dictCopy[k-1] += v
-                    dictCopy[k] -= v
                 else:
                     dictCopy[k-1] += v
                     dictCopy[k] -= v
