@@ -1,0 +1,4 @@
+I figure out that's around median but wanted to calculate
+from begin to the median 
+
+I didn't notice Gause in first try -> this was big improvement
