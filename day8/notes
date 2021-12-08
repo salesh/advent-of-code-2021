@@ -1,0 +1,12 @@
+Did this one terrible, too much hints online I checked
+at the end brute forced pretty much similar like on one 
+medium article that I found...Not happy about this one, definitely I need
+to revisit...
+
+----------------
+
+string projection
+
+tips from ThePrimeagen
+
+ 0x1 << (value - 'a')
